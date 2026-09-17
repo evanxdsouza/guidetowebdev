@@ -23,13 +23,4 @@ Both give you a live URL immediately and redeploy on every push, plus preview UR
 
 Your files (`index.html`, `style.css`, etc.) get copied onto a server that's always on and connected to the internet. Visiting the URL just downloads those files to the visitor's browser — same as opening them locally, except now anyone can reach them.
 
-## A note on this site specifically
-
-This guide site fetches `.md` files with JavaScript's `fetch()`, which most browsers block for pages opened directly from disk (`file://`). Serve it over `http://` instead:
-
-```bash
-python3 -m http.server 8000
-# then open http://localhost:8000
-```
-
-Any static host (GitHub Pages, Vercel, Netlify) serves over `http://`/`https://` automatically, so this only matters when running locally.
+Congrats! You now know the basics of web development
